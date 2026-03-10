@@ -1,0 +1,44 @@
+{
+    "name": "psc-acme/api-shipping",
+    "description": "Package api-shipping for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\ApiShipping\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.1",
+        "symfony/process": "^7.0",
+        "vlucas/phpdotenv": "^5.0",
+        "nikic/php-parser": "^5.0",
+        "spatie/laravel-permission": "^6.0",
+        "league/csv": "^9.0",
+        "psc-acme/encoder-product": "^1.0",
+        "psc-acme/processor-catalog": "^1.0",
+        "psc-acme/factory-cart": "^1.0"
+    },
+    "require-dev": {
+        "infection/infection": "^0.27",
+        "fakerphp/faker": "^1.0",
+        "mockery/mockery": "^1.6"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
